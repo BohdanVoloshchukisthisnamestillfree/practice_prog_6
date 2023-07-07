@@ -1,0 +1,19 @@
+#include <stdio.h>
+#include <math.h>
+  float dist;
+  int x1, x2, yy1, yy2;
+
+
+int main()
+ {
+ 
+  
+  printf("Enter the coordinates x1, y1, x2, y2 \n");//запрошуємо ввести координати
+  scanf("%d %d %d %d", &x1, &yy1, &x2, &yy2);//зберігаємо введені значення
+
+ // обчислюємо відстань між двома точками на площині
+  dist = sqrt(pow((x1 - x2),2) + pow((yy1 - yy2),2));
+   printf("The lengs is: %f\n", dist);//виводимо результат
+
+  return 0;
+}
